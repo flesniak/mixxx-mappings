@@ -1,0 +1,5 @@
+# Allow scanning and use of USB HID devices
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{bInterfaceClass}=="03", GROUP="users", MODE="0660"
+SUBSYSTEM=="hidraw", GROUP="users", MODE="0660"
+# for EKS Otus
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{product}=="OTUS", GROUP="users", MODE="0660"

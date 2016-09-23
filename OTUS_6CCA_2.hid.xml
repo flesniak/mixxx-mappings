@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MixxxControllerPreset mixxxVersion="1.11+" schemaVersion="1">
+    <info>
+        <name>EKS Otus HID</name>
+        <author>Ilkka Tuohela</author>
+        <description>HID mapping for EKS Otus controllers</description>
+    </info>
+    <controller id="OTUS">
+        <scriptfiles>
+            <file functionprefix="" filename="common-hid-packet-parser.js"/>
+            <file functionprefix="EksOtus" filename="EKS-Otus.js"/>
+        </scriptfiles>
+    </controller>
+</MixxxControllerPreset>
